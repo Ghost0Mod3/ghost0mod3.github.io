@@ -430,4 +430,48 @@ button:hover{
 
         font-size:.8rem;
     }
+   .terminal-launch{
+
+    text-align:center;
+
+    margin:30px 0;
+}
+
+.terminal-button{
+
+    display:inline-block;
+
+    padding:20px 50px;
+
+    background:rgba(0,0,0,.9);
+
+    color:#00ff41;
+
+    text-decoration:none;
+
+    font-size:1.4rem;
+
+    font-weight:bold;
+
+    border:2px solid #00ff41;
+
+    border-radius:12px;
+
+    box-shadow:
+        0 0 10px #00ff41,
+        0 0 20px #00ff41;
+
+    transition:.3s;
+}
+
+.terminal-button:hover{
+
+    background:#00ff41;
+
+    color:black;
+
+    box-shadow:
+        0 0 20px #00ff41,
+        0 0 40px #00ff41;
+}
 }
