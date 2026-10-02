@@ -72,51 +72,47 @@ header p{
 }
 
 /* ==========================
-   NAVIGATION
+   TERMINAL ACCESS BUTTON
 ========================== */
 
 .main-nav{
 
-    width:100%;
+    text-align:center;
 
-    display:flex;
+    background:none;
 
-    justify-content:space-evenly;
+    border:none;
 
-    align-items:center;
+    box-shadow:none;
 
-    flex-wrap:wrap;
-
-    gap:5px;
-
-    margin:25px 0;
-
-    padding:10px 0;
-
-    background:rgba(0,0,0,.90);
-
-    border-top:2px solid #00ff41;
-    border-bottom:2px solid #00ff41;
-
-    box-shadow:
-        0 0 10px #00ff41;
+    margin:20px 0 40px;
 }
 
 .main-nav a{
 
-    flex:1;
+    display:inline-block;
 
-    min-width:120px;
+    min-width:280px;
 
-    padding:14px;
-
-    text-align:center;
-
-    text-decoration:none;
+    padding:15px 40px;
 
     color:#00ff41;
 
+    text-decoration:none;
+
     font-weight:bold;
+
+    font-size:1.1rem;
+
+    background:rgba(0,0,0,.85);
+
+    border:2px solid #00ff41;
+
+    border-radius:12px;
+
+    box-shadow:
+        0 0 10px #00ff41,
+        0 0 20px #00ff41;
 
     transition:.3s;
 }
@@ -126,11 +122,10 @@ header p{
     background:#00ff41;
 
     color:black;
-}
 
-.main-nav a:focus-visible{
-
-    outline:2px solid white;
+    box-shadow:
+        0 0 20px #00ff41,
+        0 0 40px #00ff41;
 }
 
 /* ==========================
@@ -194,7 +189,7 @@ header p{
 }
 
 /* ==========================
-   REPOSITORY GRID
+   REPOSITORY FEED
 ========================== */
 
 #repo-container{
@@ -226,23 +221,6 @@ header p{
 
     box-shadow:
         0 0 20px #00ff41;
-}
-
-.repo-card h3{
-
-    margin-bottom:10px;
-}
-
-.repo-card p{
-
-    margin-bottom:10px;
-}
-
-.repo-card a{
-
-    color:#00ff41;
-
-    text-decoration:none;
 }
 
 /* ==========================
@@ -360,8 +338,12 @@ button:hover{
 }
 
 /* ==========================
-   UNDER CONSTRUCTION
+   CONSTRUCTION BANNER
 ========================== */
+
+#terminal-entry{
+    text-decoration:none;
+}
 
 #construction-banner{
 
@@ -399,9 +381,21 @@ button:hover{
 
     z-index:9999;
 
+    transition:.3s;
+
     box-shadow:
         0 0 15px #ffcc00,
         0 0 35px #ffcc00;
+}
+
+#construction-banner:hover{
+
+    cursor:pointer;
+
+    box-shadow:
+        0 0 25px #ffcc00,
+        0 0 45px #ffcc00,
+        0 0 70px #ffcc00;
 }
 
 /* ==========================
@@ -414,11 +408,8 @@ button:hover{
         font-size:2.5rem;
     }
 
-    .main-nav{
-        flex-direction:column;
-    }
-
     .main-nav a{
+        min-width:220px;
         width:100%;
     }
 
@@ -430,48 +421,4 @@ button:hover{
 
         font-size:.8rem;
     }
-   .terminal-launch{
-
-    text-align:center;
-
-    margin:30px 0;
-}
-
-.terminal-button{
-
-    display:inline-block;
-
-    padding:20px 50px;
-
-    background:rgba(0,0,0,.9);
-
-    color:#00ff41;
-
-    text-decoration:none;
-
-    font-size:1.4rem;
-
-    font-weight:bold;
-
-    border:2px solid #00ff41;
-
-    border-radius:12px;
-
-    box-shadow:
-        0 0 10px #00ff41,
-        0 0 20px #00ff41;
-
-    transition:.3s;
-}
-
-.terminal-button:hover{
-
-    background:#00ff41;
-
-    color:black;
-
-    box-shadow:
-        0 0 20px #00ff41,
-        0 0 40px #00ff41;
-}
 }
