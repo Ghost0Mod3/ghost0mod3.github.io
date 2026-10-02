@@ -45,3 +45,380 @@ body{
 
     padding:40px 20px;
 }
+
+/* ==========================
+   HEADER
+========================== */
+
+header{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+header h1{
+    font-size:4rem;
+
+    text-shadow:
+        0 0 5px #00ff41,
+        0 0 10px #00ff41,
+        0 0 20px #00ff41,
+        0 0 40px #00ff41;
+}
+
+header p{
+    margin-top:10px;
+    font-size:1.1rem;
+    color:#9cffb3;
+}
+
+/* ==========================
+   TERMINAL ACCESS BUTTON
+========================== */
+
+.main-nav{
+
+    text-align:center;
+
+    background:none;
+
+    border:none;
+
+    box-shadow:none;
+
+    margin:20px 0 40px;
+}
+
+.main-nav a{
+
+    display:inline-block;
+
+    min-width:280px;
+
+    padding:15px 40px;
+
+    color:#00ff41;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    font-size:1.1rem;
+
+    background:rgba(0,0,0,.85);
+
+    border:2px solid #00ff41;
+
+    border-radius:12px;
+
+    box-shadow:
+        0 0 10px #00ff41,
+        0 0 20px #00ff41;
+
+    transition:.3s;
+}
+
+.main-nav a:hover{
+
+    background:#00ff41;
+
+    color:black;
+
+    box-shadow:
+        0 0 20px #00ff41,
+        0 0 40px #00ff41;
+}
+
+/* ==========================
+   CONTENT BOXES
+========================== */
+
+.content-box{
+
+    background:rgba(0,0,0,.85);
+
+    border:1px solid #00ff41;
+
+    border-radius:12px;
+
+    padding:25px;
+
+    margin-bottom:25px;
+
+    backdrop-filter:blur(8px);
+
+    box-shadow:
+        0 0 15px rgba(0,255,65,.15);
+}
+
+.content-box h2{
+
+    margin-bottom:15px;
+
+    text-shadow:
+        0 0 10px #00ff41;
+}
+
+.content-box p{
+
+    line-height:1.8;
+
+    margin-bottom:12px;
+}
+
+.content-box ul{
+
+    margin-left:20px;
+}
+
+.content-box li{
+
+    margin-bottom:10px;
+}
+
+.content-box a{
+
+    color:#00ff41;
+
+    text-decoration:none;
+}
+
+.content-box a:hover{
+
+    text-shadow:
+        0 0 10px #00ff41;
+}
+
+/* ==========================
+   REPOSITORY FEED
+========================== */
+
+#repo-container{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(auto-fit,minmax(300px,1fr));
+
+    gap:20px;
+}
+
+.repo-card{
+
+    background:rgba(0,0,0,.85);
+
+    border:1px solid #00ff41;
+
+    border-radius:12px;
+
+    padding:20px;
+
+    transition:.3s;
+}
+
+.repo-card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:
+        0 0 20px #00ff41;
+}
+
+/* ==========================
+   TERMINAL
+========================== */
+
+.terminal{
+
+    background:rgba(0,0,0,.92);
+
+    border:1px solid #00ff41;
+
+    border-radius:12px;
+
+    padding:20px;
+
+    box-shadow:
+        0 0 20px #00ff41;
+}
+
+#output{
+
+    min-height:400px;
+
+    padding:10px;
+
+    overflow-y:auto;
+
+    white-space:pre-line;
+
+    margin-bottom:15px;
+}
+
+#terminal-input{
+
+    width:100%;
+
+    padding:12px;
+
+    background:black;
+
+    color:#00ff41;
+
+    border:1px solid #00ff41;
+
+    border-radius:6px;
+
+    font-family:Consolas, monospace;
+}
+
+#terminal-input:focus{
+
+    outline:none;
+
+    box-shadow:
+        0 0 10px #00ff41;
+}
+
+/* ==========================
+   FORMS
+========================== */
+
+input,
+textarea{
+
+    width:100%;
+
+    margin-top:10px;
+    margin-bottom:15px;
+
+    padding:12px;
+
+    background:black;
+
+    color:#00ff41;
+
+    border:1px solid #00ff41;
+
+    border-radius:6px;
+
+    font-family:Consolas, monospace;
+}
+
+input:focus,
+textarea:focus{
+
+    outline:none;
+
+    box-shadow:
+        0 0 10px #00ff41;
+}
+
+button{
+
+    padding:12px 20px;
+
+    background:black;
+
+    color:#00ff41;
+
+    border:1px solid #00ff41;
+
+    border-radius:6px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+button:hover{
+
+    background:#00ff41;
+
+    color:black;
+}
+
+/* ==========================
+   CONSTRUCTION BANNER
+========================== */
+
+#terminal-entry{
+    text-decoration:none;
+}
+
+#construction-banner{
+
+    position:fixed;
+
+    top:120px;
+    left:-250px;
+
+    width:950px;
+
+    padding:20px;
+
+    background:
+        repeating-linear-gradient(
+            45deg,
+            #ffcc00,
+            #ffcc00 20px,
+            #111111 20px,
+            #111111 40px
+        );
+
+    color:white;
+
+    font-size:1.2rem;
+
+    font-weight:bold;
+
+    text-align:center;
+
+    text-transform:uppercase;
+
+    letter-spacing:2px;
+
+    transform:rotate(-25deg);
+
+    z-index:9999;
+
+    transition:.3s;
+
+    box-shadow:
+        0 0 15px #ffcc00,
+        0 0 35px #ffcc00;
+}
+
+#construction-banner:hover{
+
+    cursor:pointer;
+
+    box-shadow:
+        0 0 25px #ffcc00,
+        0 0 45px #ffcc00,
+        0 0 70px #ffcc00;
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media(max-width:768px){
+
+    header h1{
+        font-size:2.5rem;
+    }
+
+    .main-nav a{
+        min-width:220px;
+        width:100%;
+    }
+
+    #construction-banner{
+
+        width:650px;
+
+        left:-250px;
+
+        font-size:.8rem;
+    }
+}
