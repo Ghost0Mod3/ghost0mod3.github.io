@@ -11,9 +11,13 @@
 
     <canvas id="matrix"></canvas>
 
-    <div id="construction-banner">
-        🚧 WEBSITE UNDER CONSTRUCTION 🚧
-    </div>
+    <a href="terminal.html" id="terminal-entry">
+
+        <div id="construction-banner">
+            🚧 WEBSITE UNDER CONSTRUCTION 🚧
+        </div>
+
+    </a>
 
     <div class="container">
 
@@ -21,14 +25,6 @@
             <h1>Ghost0Mod3</h1>
             <p>Developer • Builder • Creator</p>
         </header>
-
-        <div class="terminal-launch">
-
-            <a href="terminal.html" class="terminal-button">
-                ACCESS TERMINAL
-            </a>
-
-        </div>
 
         <div class="content-box">
 
@@ -40,7 +36,8 @@
 
             <p>
                 This site serves as a home for projects,
-                experiments, resources, and development work.
+                experiments, resources, development work,
+                and future community features.
             </p>
 
         </div>
@@ -56,7 +53,8 @@
                 <li>✅ Terminal Navigation Active</li>
                 <li>🚧 Forms Module In Progress</li>
                 <li>🚧 Games Module In Progress</li>
-                <li>🚧 Learn Module On Hold</li>
+                <li>🚧 Learn Module In Progress</li>
+                <li>🚧 Message Board Planned</li>
             </ul>
 
         </div>
@@ -66,7 +64,11 @@
             <h2>Terminal Commands</h2>
 
             <p>
-                Launch the terminal and type:
+                Click the construction banner to access the terminal.
+            </p>
+
+            <p>
+                Available commands:
             </p>
 
             <ul>
@@ -74,8 +76,11 @@
                 <li>home</li>
                 <li>links</li>
                 <li>contact</li>
+                <li>learn</li>
                 <li>forms</li>
+                <li>games</li>
                 <li>github</li>
+                <li>status</li>
                 <li>clear</li>
             </ul>
 
@@ -86,6 +91,7 @@
             <h2>GitHub</h2>
 
             <p>
+
                 <a href="https://github.com/Ghost0Mod3"
                    target="_blank"
                    rel="noopener noreferrer">
@@ -93,8 +99,28 @@
                     Open GitHub Profile →
 
                 </a>
+
             </p>
 
         </div>
 
         <div class="content-box">
+
+            <h2>Repository Feed</h2>
+
+            <div id="repo-container">
+
+                <p>
+                    Loading repositories...
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="matrix.js"></script>
+
+</body>
+</html>
