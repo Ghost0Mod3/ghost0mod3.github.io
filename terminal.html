@@ -1,14 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terminal | Ghost0Mod3</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
 
     <canvas id="matrix"></canvas>
 
-    <a href="terminal.html" id="terminal-entry">
-
-        <div id="construction-banner">
-            🚧 WEBSITE UNDER CONSTRUCTION 🚧
-        </div>
-
-    </a>
+    <div id="construction-banner">
+        🚧 WEBSITE UNDER CONSTRUCTION 🚧
+    </div>
 
     <div class="container">
 
@@ -19,10 +24,9 @@
 
         <nav class="main-nav">
 
-            <a href="index.html">
-                RETURN HOME
-            </a>
-
+            <a href="index.html">HOME</a>
+            
+            
         </nav>
 
         <div class="terminal">
@@ -31,14 +35,122 @@
 Ghost0Mod3 Terminal v1.0
 
 Type "help" to begin.
+
             </div>
 
             <input
                 id="terminal-input"
                 type="text"
                 placeholder="Enter command..."
-                autocomplete="off">
+                autocomplete="off"
+            >
 
         </div>
 
     </div>
+
+    <script>
+
+    const input =
+        document.getElementById("terminal-input");
+
+    const output =
+        document.getElementById("output");
+
+    input.addEventListener("keydown", function(e){
+
+        if(e.key !== "Enter") return;
+
+        const cmd =
+            input.value.trim().toLowerCase();
+
+        let response = "";
+
+        switch(cmd){
+
+            case "help":
+
+                response =
+`Available Commands
+
+help
+home
+contact
+links
+forms
+learn
+github
+clear`;
+
+                break;
+
+            case "home":
+
+                window.location =
+                    "index.html";
+                return;
+
+            case "contact":
+
+                window.location =
+                    "contact.html";
+                return;
+
+            case "forms":
+
+                window.location =
+                    "forms.html";
+                return;
+
+            case "learn":
+
+                window.location =
+                    "learn.html";
+                return;
+
+            case "links":
+
+                window.location =
+                    "links.html";
+                return;
+
+            case "github":
+
+                response =
+                    "GitHub Profile: github.com/Ghost0Mod3";
+                break;
+
+            case "clear":
+
+                output.textContent =
+                    "Ghost0Mod3 Terminal v1.0\n";
+
+                input.value = "";
+
+                return;
+
+            default:
+
+                response =
+                    `'${cmd}' is not a recognized command.`;
+        }
+
+        output.textContent +=
+
+`\n\n> ${cmd}
+
+${response}`;
+
+        output.scrollTop =
+            output.scrollHeight;
+
+        input.value = "";
+
+    });
+
+    </script>
+
+    <script src="matrix.js"></script>
+
+</body>
+</html>
